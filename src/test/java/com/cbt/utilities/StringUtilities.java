@@ -6,11 +6,12 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class StringUtilities {
     public static void main(String[] args) {
         WebDriverManager.chromedriver().setup();
-        WebDriver driver= new ChromeDriver();
+        WebDriver driver= new SafariDriver();
         driver.manage().window().maximize();
         driver.navigate().to("https://google.com");
 

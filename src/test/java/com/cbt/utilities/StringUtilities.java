@@ -11,7 +11,7 @@ import org.openqa.selenium.safari.SafariDriver;
 public class StringUtilities {
     public static void main(String[] args) {
         WebDriverManager.chromedriver().setup();
-        WebDriver driver= new SafariDriver();
+        WebDriver driver= new ChromeDriver();
         driver.manage().window().maximize();
         driver.navigate().to("https://google.com");
 
